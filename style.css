@@ -1,18 +1,43 @@
 body {
     margin: 0;
+    background:white;
 }
 
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
-.content {
-    position: relative;
+.subs{
     color: white;
+    background-color: red;
+    height: 30;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+      
+}
+
+.subs:hover{
+    background-color: brown;
+
+}
+.subs:active{
+    background-color: black;
+}
+
+.Join{
+    color: rgb(1, 128, 219);
+    font-size: 18;
+    border-color: rgb(1, 128, 219) ;
+    width: 60;
+    height: 30;
+    border-radius: 30px;
+
+}
+.Join:hover{
+    color: aliceblue;
+    background-color:  rgb(1, 128, 219);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.but:hover{
+    text-decoration: underline;
 }
