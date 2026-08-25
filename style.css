@@ -41,3 +41,8 @@ body {
 .but:hover{
     text-decoration: underline;
 }
+
+.im{
+    height: 20px;
+    width: 20px;
+}
