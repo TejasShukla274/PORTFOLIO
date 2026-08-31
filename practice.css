@@ -1,0 +1,21 @@
+.img{
+    border-radius: 200px;
+ height: 30;
+ vertical-align: middle;
+
+ }
+.inp{
+    vertical-align: middle;
+    border: none;
+}
+.but{
+    vertical-align: middle;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(29, 155, 240);;
+    color: aliceblue;
+    height: 20;
+    font-size: 10;
+    width: 40;
+    cursor: pointer;
+}

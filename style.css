@@ -1,48 +1,92 @@
-body {
-    margin: 0;
-    background:white;
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 25;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.lin{
+    height: 25;
+    display: inline-block;
+    cursor: pointer;
+    
 }
 
-
-.subs{
-    color: white;
-    background-color: red;
+.sea{
+    vertical-align: top;
+    width: 400px;
     height: 30;
-    border-radius: 20px;
-    border: none;
-    cursor:pointer;
-      
-}
-
-.subs:hover{
-    background-color: brown;
+    align-items: center;
+    margin-left: 200;
+    vertical-align: top;
+    display: inline-block;
 
 }
-.subs:active{
-    background-color: black;
-}
 
-.Join{
-    color: rgb(1, 128, 219);
-    font-size: 18;
-    border-color: rgb(1, 128, 219) ;
-    width: 60;
-    height: 30;
-    border-radius: 30px;
+.brown{
+    height: 155;
+    margin-top: 20;
+    cursor: pointer;
+    display: block;
 
 }
-.Join:hover{
-    color: aliceblue;
-    background-color:  rgb(1, 128, 219);
-    transition: background-color 0.3s ease-in-out;
+.t1{
+    width: 240;
     cursor: pointer;
 }
+.t12{
+  
+    color: rgb(96,96, 96);
+}
+.mar{
+    border-radius: 100px;
+    height: 35;
+    display: block;
+    margin-top: 15;
+    
+}
+.video-tit{
+    display: inline-block;
+}
+.video-titty{
+    display: inline-block;
+    vertical-align: top;
 
-.but:hover{
-    text-decoration: underline;
+}
+.t22{
+      color: rgb(96,96, 96);
+}
+.marki{
+     border-radius: 100px;
+    height: 35;
+    display: block;
+    
+}
+.bro{
+    display: inline-block;
+    vertical-align: top;
+}
+.bron{
+    display: inline-block;
 }
 
-.im{
-    height: 20px;
-    width: 20px;
+.t21{
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 15;
+}
+.br{
+      height: 155;
+    margin-top: 20;
+    cursor: pointer;
+    display: block;
+}
+.t23{
+    display: inline-block;
+}
+.t2{
+    cursor: pointer;
 }
