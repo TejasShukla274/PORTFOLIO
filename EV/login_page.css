@@ -73,6 +73,9 @@ body{
 
 }
 
+.forgot:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -158,6 +161,9 @@ cursor: pointer;
     text-decoration: none;
 }
 
+.sig:hover{
+    text-decoration: underline;
+}
 
 .logBut{
     cursor: pointer;
@@ -193,9 +199,7 @@ cursor: pointer;
     margin-right: 5;
 
 }
-.apple:hover{
-    background-color: #8b95a5;
-}
+
 .google:hover{
     color: white;
     background-color: black;
