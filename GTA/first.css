@@ -1,0 +1,268 @@
+/* =========================
+   BACKGROUND
+   ========================= */
+
+body {
+    /* Sets the background image */
+    background-image: url(Photos/background.webp);
+
+    /* Keeps the image centered */
+    background-position: center;
+
+    /* Prevents the image from repeating */
+    background-repeat: no-repeat;
+
+    /* Makes the image cover the entire screen */
+    background-size: cover;
+}
+
+
+/* =========================
+   ROCKSTAR LOGO
+   ========================= */
+
+.rockk {
+    /* Height of the Rockstar logo */
+    height: 50px;
+}
+
+.rock {
+    /* Moves the logo away from the left edge */
+    margin-left: 50px;
+
+    /* Moves the logo down slightly */
+    margin-top: 20px;
+
+    /* Creates space between the logo and navigation */
+    margin-right: 100px;
+}
+
+
+/* =========================
+   MAIN HEADER
+   ========================= */
+
+.head {
+    /* Makes all children sit in one row */
+    display: flex;
+
+    /* Makes the direction left → right */
+    flex-direction: row;
+
+    /* Vertically centers everything */
+    align-items: center;
+
+    /* Gives the header a fixed height */
+    height: 80px;
+}
+
+
+/* =========================
+   NAVIGATION BUTTONS
+   ========================= */
+
+.buttons {
+    /* Places all buttons in one row */
+    display: flex;
+
+    /* Centers the buttons horizontally
+       inside the available space */
+    justify-content: center;
+
+    /* Centers the buttons vertically */
+    align-items: center;
+
+    /* Space between each button */
+    gap: 4px;
+
+    /* Makes .buttons take up the remaining
+       available space in the header */
+    flex: 1;
+}
+
+
+/* =========================
+   NAVIGATION BUTTON DESIGN
+   ========================= */
+
+.B1,
+.B2,
+.B3,
+.B4,
+.B5,
+.B6 {
+
+    /* No background normally */
+    background: transparent;
+
+    /* White text */
+    color: white;
+
+    /* Makes text bold */
+    font-weight: bold;
+
+    /* Text size */
+    font-size: 14px;
+
+    /* Makes the corners rounded */
+    border-radius: 25px;
+
+    /* Height of each button */
+    height: 44px;
+
+    /* Width of each button */
+    width: 130px;
+
+    /* Removes default button border */
+    border: none;
+
+    /* Changes mouse cursor to hand */
+    cursor: pointer;
+
+    /* Makes the text centered horizontally
+       and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Makes hover animation smooth */
+    transition: 0.7s;
+}
+
+
+/* =========================
+   NAVIGATION HOVER
+   ========================= */
+
+.B1:hover,
+.B2:hover,
+.B3:hover,
+.B4:hover,
+.B5:hover,
+.B6:hover {
+
+    /* Slight white transparent background
+       appears when mouse is over button */
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================
+   GET LAUNCHER
+   ========================= */
+
+.but2 {
+    /* No large margin needed here.
+       The navigation's flex: 1 handles
+       the available space. */
+    margin-left: 0;
+}
+
+.launch {
+    /* Thin white border */
+    border: 1px solid white;
+
+    /* Transparent background */
+    background: transparent;
+
+    /* White text */
+    color: white;
+
+    /* Rounded corners */
+    border-radius: 25px;
+
+    /* Text size */
+    font-size: 14px;
+
+    /* Button width */
+    width: 130px;
+
+    /* Bold text */
+    font-weight: bold;
+
+    /* Button height */
+    height: 40px;
+}
+
+
+/* Launcher hover effect */
+
+.launch:hover {
+    /* Slight white background */
+    background: rgba(255, 255, 255, 0.15);
+
+    /* Hand cursor */
+    cursor: pointer;
+
+    /* Smooth transition */
+    transition: 0.7s;
+}
+
+
+/* =========================
+   SEARCH + PROFILE
+   ========================= */
+
+.C {
+
+    /* Puts search and profile next to each other */
+    display: flex;
+
+    /* Space between search and profile */
+    gap: 25px;
+
+    /* Vertically centers both icons */
+    align-items: center;
+
+    /* Pushes this group toward the right */
+    margin-left: auto;
+
+    /* Some space from the right edge */
+    margin-right: 60px;
+}
+
+
+/* Remove default search button styling */
+
+button.search {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+/* Remove default profile button styling */
+
+button.profile {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+/* Search icon size */
+
+.sear {
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* Profile icon size */
+
+.prof {
+    cursor: pointer;
+    height: 20px;
+}
+
+.sear:hover{
+background-color:rgba(255, 255, 255, 0.15);
+
+}
+
+.search:hover{
+  background-color:  rgba(255, 255, 255, 0.15);
+  width: 40;
+  height: 40;
+}
+
