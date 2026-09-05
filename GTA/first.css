@@ -209,7 +209,7 @@ body {
     display: flex;
 
     /* Space between search and profile */
-    gap: 25px;
+    gap: 10px;
 
     /* Vertically centers both icons */
     align-items: center;
@@ -228,6 +228,9 @@ button.search {
     background: transparent;
     border: none;
     padding: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
 
@@ -237,6 +240,9 @@ button.profile {
     background: transparent;
     border: none;
     padding: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
 
@@ -255,14 +261,32 @@ button.profile {
     height: 20px;
 }
 
-.sear:hover{
-background-color:rgba(255, 255, 255, 0.15);
 
-}
+
 
 .search:hover{
   background-color:  rgba(255, 255, 255, 0.15);
-  width: 40;
-  height: 40;
+ border-width: 30;
+  border-radius: 50%;
 }
 
+
+.profile:hover{
+  background-color:  rgba(255, 255, 255, 0.15);
+ border-width: 30;
+  border-radius: 50%;
+}
+
+.store{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.support{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}

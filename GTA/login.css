@@ -1,0 +1,89 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(photos/wp14624219.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.log{
+    color: white;
+    margin-left: auto;
+    margin-right: 100px;
+    padding-top: 100px;
+    width: 450px;
+}
+   .google {
+    width: 83%;
+    height: 42px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.google img {
+    width: 18px;
+    height: 18px;
+}
+
+.email{
+    display: block;
+    background: transparent;
+    width: 83%;
+    height: 40;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+}
+
+.pass{
+    display: block;
+      background: transparent;
+    width: 83%;
+    height: 40;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    margin-bottom: 10;
+}
+
+.option{
+    width: 83%;
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    
+}
+
+.option a {
+    color: white;
+    text-decoration: none;
+}
+.lo{
+    margin-top: 40;
+    width: 83%;
+    height: 43;
+    font-size: 18;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.lo:hover{
+    background-color: rgb(33, 31, 31);
+    transition: .3s;
+}
+.ex{
+    font-size: 12;
+}
+.ex a{
+    color: white;
+    text-decoration: none;
+}
