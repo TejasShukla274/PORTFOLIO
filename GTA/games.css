@@ -1,3 +1,80 @@
+body{
+    background-color: rgb(12, 11, 11);
+}
+.content {
+    margin-left: 230px;
+    margin-right: 230px;
+        animation: dropCurtain 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+}
+
+
+@keyframes dropCurtain {
+
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+.heading {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.A{
+    height: 275px;
+    width:225px ;
+    border-radius: 5px;
+}
+
+.heading{
+    font-family: Arial, sans-serif;
+    font-size: 29;
+    font-weight: bold;
+}
+
+.view{
+font-family: Arial, sans-serif;
+font-size: 18;
+font-weight: bold;
+background: transparent;
+color: white;
+border: none;
+cursor: pointer;
+height: 50;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.view:hover{
+      background-color:  rgba(255, 255, 255, 0.15);
+ border-width: 50;
+  border-radius: 25px;
+}
+
+.arrow{
+    width: 20;
+    height: 20;
+    margin-left: 20px;
+    
+}
+
 /* =========================
    BACKGROUND
    ========================= */
@@ -292,3 +369,90 @@ button.profile {
 }
 
 
+/* Hide the checkbox */
+#games-toggle {
+    display: none;
+}
+
+
+/* Keep the header above the Games curtain */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Games dropdown */
+.games-curtain {
+    position: fixed;
+
+    top: 85px;
+    left: 0;
+
+    width: 100%;
+    height: 510px;
+
+    background-color: rgb(12, 11, 11);
+
+    z-index: 900;
+
+    /* Start above the screen */
+    transform: translateY(-110%);
+
+    /* Smooth dropping animation */
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+    overflow: hidden;
+}
+
+
+/* When GAMES is clicked */
+#games-toggle:checked ~ .games-curtain {
+    transform: translateY(0);
+}
+
+
+/* Games content */
+.games-curtain .content {
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-top: 50px;
+
+    /* Remove your old animation */
+    animation: none;
+}
+
+
+/* Heading */
+.games-curtain .heading {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Arial, sans-serif;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+
+/* Game cards */
+.games-curtain .tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* Individual cards */
+.games-curtain .A {
+    height: 275px;
+    width: 225px;
+
+    border-radius: 5px;
+}
