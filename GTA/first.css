@@ -144,6 +144,9 @@ body {
 
     /* White text */
     color: white;
+    
+        font-family: sans-serif;
+
 
     /* Bold text */
     font-weight: bold;

@@ -1,0 +1,88 @@
+body{
+    background-image: url(Photos/background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo{
+    display: flex;
+      position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+
+.Order{
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    border: 1px solid;
+    border-radius: 25px;
+    border-radius: 50px;
+    width: 200;
+    font-size: 20;
+    height: 60;
+     cursor: pointer;
+}
+
+.Watch{
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    background: pink;
+    border: none;
+    border-radius: 50px;
+    width: 200;
+    font-size: 20;
+    height: 60;
+    cursor: pointer;
+   
+}
+
+.Watch:hover{
+background: rgb(250, 126, 147);
+transition: .7s;
+
+}
+
+.Order:hover{
+    backdrop-filter:blur(20px);
+    transition: .9s;
+}
+.text{
+    font-family: sans-serif;
+    margin-top: 15;
+    color: white;
+    font-weight: bold;
+    width: 500;
+}
+
+.Gta{
+    height: 300;
+}
+
+.Top{
+    font-size: 18;
+
+}
+
+
+.Bot{
+    font-size: 50;
+    margin-top: 1px;
+}
+
+.Watchh{
+    color:black;
+    text-decoration: none;
+}
+
+.Orderr{
+    color: white;
+    text-decoration: none;
+}
