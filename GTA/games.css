@@ -1,10 +1,10 @@
 body{
-    background-color: rgb(12, 11, 11);
+    margin: 0px;
 }
 .content {
     margin-left: 230px;
     margin-right: 230px;
-        animation: dropCurtain 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: dropCurtain 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 
 }
 
@@ -389,7 +389,7 @@ button.profile {
 .games-curtain {
     position: fixed;
 
-    top: 85px;
+    top: 0px;
     left: 0;
 
     width: 100%;

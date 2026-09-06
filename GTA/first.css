@@ -1,20 +1,42 @@
 /* =========================
-   BACKGROUND
+   BODY / BACKGROUND
    ========================= */
 
 body {
-    /* Sets the background image */
+
+    /* Removes default browser space */
+    margin: 0;
+
+    /* Background image */
     background-image: url(Photos/background.webp);
 
-    /* Keeps the image centered */
+    /* Keeps image centered */
     background-position: center;
 
-    /* Prevents the image from repeating */
+    /* Prevents image from repeating */
     background-repeat: no-repeat;
 
-    /* Makes the image cover the entire screen */
+    /* Covers the screen */
     background-size: cover;
+
+    /* Dark background behind the image */
+   margin: 0px;
+
 }
+
+
+
+/* =========================
+   HIDE CHECKBOX
+   ========================= */
+
+#games-toggle {
+
+    /* We don't want the checkbox visible */
+    display: none;
+
+}
+
 
 
 /* =========================
@@ -22,20 +44,26 @@ body {
    ========================= */
 
 .rockk {
-    /* Height of the Rockstar logo */
+
+    /* Logo height */
     height: 50px;
+
 }
+
 
 .rock {
-    /* Moves the logo away from the left edge */
+
+    /* Distance from left */
     margin-left: 50px;
 
-    /* Moves the logo down slightly */
+    /* Distance from top */
     margin-top: 20px;
 
-    /* Creates space between the logo and navigation */
+    /* Space between logo and navigation */
     margin-right: 100px;
+
 }
+
 
 
 /* =========================
@@ -43,46 +71,65 @@ body {
    ========================= */
 
 .head {
-    /* Makes all children sit in one row */
+
+    /* Places everything in one row */
     display: flex;
 
-    /* Makes the direction left → right */
+    /* Left to right */
     flex-direction: row;
 
     /* Vertically centers everything */
     align-items: center;
 
-    /* Gives the header a fixed height */
+    /* Header height */
     height: 80px;
+
+    /* Keeps header at top */
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    /* Full width */
+    width: 100%;
+
+    /* Header stays above curtain */
+    z-index: 1000;
+
+    /* Keeps the hero image visible behind it */
+    background: transparent;
+
 }
+
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.buttons {
+
+    /* Places buttons in a row */
+    display: flex;
+
+    /* Centers buttons */
+    justify-content: center;
+
+    /* Vertically centers buttons */
+    align-items: center;
+
+    /* Small gap */
+    gap: 4px;
+
+    /* Takes remaining space */
+    flex: 1;
+
+}
+
 
 
 /* =========================
    NAVIGATION BUTTONS
-   ========================= */
-
-.buttons {
-    /* Places all buttons in one row */
-    display: flex;
-
-    /* Centers the buttons horizontally
-       inside the available space */
-    justify-content: center;
-
-    /* Centers the buttons vertically */
-    align-items: center;
-
-    /* Space between each button */
-    gap: 4px;
-
-    /* Makes .buttons take up the remaining
-       available space in the header */
-    flex: 1;
-}
-
-
-/* =========================
-   NAVIGATION BUTTON DESIGN
    ========================= */
 
 .B1,
@@ -92,42 +139,67 @@ body {
 .B5,
 .B6 {
 
-    /* No background normally */
+    /* Transparent background */
     background: transparent;
 
     /* White text */
     color: white;
 
-    /* Makes text bold */
+    /* Bold text */
     font-weight: bold;
 
     /* Text size */
     font-size: 14px;
 
-    /* Makes the corners rounded */
+    /* Rounded corners */
     border-radius: 25px;
 
-    /* Height of each button */
+    /* Button height */
     height: 44px;
 
-    /* Width of each button */
+    /* Button width */
     width: 130px;
 
-    /* Removes default button border */
+    /* No border */
     border: none;
 
-    /* Changes mouse cursor to hand */
+    /* Hand cursor */
     cursor: pointer;
 
-    /* Makes the text centered horizontally
-       and vertically */
+    /* Center text */
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
-    /* Makes hover animation smooth */
+    /* Smooth hover */
     transition: 0.7s;
+
+    /* Remove underline from label */
+    text-decoration: none;
+
 }
+
+
+
+/* =========================
+   GAMES LABEL
+   ========================= */
+
+/*
+   Since GAMES is now a label instead
+   of a button, we give it the same
+   appearance as the other buttons.
+*/
+
+.B1 {
+
+    /* Makes label behave like a button */
+    box-sizing: border-box;
+
+}
+
 
 
 /* =========================
@@ -141,10 +213,11 @@ body {
 .B5:hover,
 .B6:hover {
 
-    /* Slight white transparent background
-       appears when mouse is over button */
+    /* Transparent white background */
     background: rgba(255, 255, 255, 0.15);
+
 }
+
 
 
 /* =========================
@@ -152,42 +225,44 @@ body {
    ========================= */
 
 .but2 {
-    /* No large margin needed here.
-       The navigation's flex: 1 handles
-       the available space. */
+
+    /* No extra margin */
     margin-left: 0;
+
 }
 
+
 .launch {
-    /* Thin white border */
+
+    /* White border */
     border: 1px solid white;
 
-    /* Transparent background */
+    /* Transparent */
     background: transparent;
 
     /* White text */
     color: white;
 
-    /* Rounded corners */
+    /* Rounded */
     border-radius: 25px;
 
     /* Text size */
     font-size: 14px;
 
-    /* Button width */
+    /* Width */
     width: 130px;
 
-    /* Bold text */
+    /* Bold */
     font-weight: bold;
 
-    /* Button height */
+    /* Height */
     height: 40px;
+
 }
 
 
-/* Launcher hover effect */
-
 .launch:hover {
+
     /* Slight white background */
     background: rgba(255, 255, 255, 0.15);
 
@@ -196,7 +271,9 @@ body {
 
     /* Smooth transition */
     transition: 0.7s;
+
 }
+
 
 
 /* =========================
@@ -205,90 +282,355 @@ body {
 
 .C {
 
-    /* Puts search and profile next to each other */
+    /* Places items next to each other */
     display: flex;
 
-    /* Space between search and profile */
+    /* Space between icons */
     gap: 10px;
 
-    /* Vertically centers both icons */
+    /* Vertically centers them */
     align-items: center;
 
-    /* Pushes this group toward the right */
+    /* Pushes to right */
     margin-left: auto;
 
-    /* Some space from the right edge */
+    /* Distance from right */
     margin-right: 60px;
+
 }
 
 
-/* Remove default search button styling */
+
+/* Search button */
 
 button.search {
+
     background: transparent;
+
     border: none;
+
     padding: 0;
+
     width: 35px;
+
     height: 35px;
+
     cursor: pointer;
+
 }
 
 
-/* Remove default profile button styling */
+
+/* Profile button */
 
 button.profile {
+
     background: transparent;
+
     border: none;
+
     padding: 0;
+
     width: 35px;
+
     height: 35px;
+
     cursor: pointer;
+
 }
 
 
-/* Search icon size */
+
+/* Search icon */
 
 .sear {
+
     height: 20px;
+
     cursor: pointer;
+
 }
 
 
-/* Profile icon size */
+
+/* Profile icon */
 
 .prof {
-    cursor: pointer;
+
     height: 20px;
+
+    cursor: pointer;
+
 }
 
 
 
+/* Search hover */
 
-.search:hover{
-  background-color:  rgba(255, 255, 255, 0.15);
- border-width: 30;
-  border-radius: 50%;
+.search:hover {
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+
 }
 
 
-.profile:hover{
-  background-color:  rgba(255, 255, 255, 0.15);
- border-width: 30;
-  border-radius: 50%;
+
+/* Profile hover */
+
+.profile:hover {
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+
 }
 
-.store{
+
+
+/* Store link */
+
+.store {
+
     text-decoration: none;
+
     color: white;
+
     font-weight: bold;
-    
+
 }
 
-.support{
+
+
+/* Support link */
+
+.support {
+
     text-decoration: none;
+
     color: white;
+
     font-weight: bold;
 
 }
 
 
+
+/* =========================
+   GAMES CURTAIN
+   ========================= */
+
+.games-curtain {
+
+    /* Fixed to the screen */
+    position: fixed;
+
+    /* Starts BELOW the header */
+    top: 80px;
+
+    left: 0;
+
+    /* Full width */
+    width: 100%;
+
+    /* IMPORTANT:
+       This prevents it from covering
+       the entire screen */
+    height: 510px;
+
+    /* Dark Rockstar-style background */
+    background-color: rgb(12, 11, 11);
+
+    /* Below header */
+    z-index: 900;
+
+    /* Start above the screen */
+    transform: translateY(-110%);
+
+    /* Smooth curtain animation */
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Keeps content inside */
+    overflow: hidden;
+
+}
+
+
+
+/* =========================
+   OPEN CURTAIN
+   ========================= */
+
+/*
+   When checkbox is checked,
+   move the curtain down.
+*/
+
+#games-toggle:checked ~ .games-curtain {
+
+    transform: translateY(0);
+
+}
+
+
+
+/* =========================
+   CONTENT INSIDE CURTAIN
+   ========================= */
+
+.games-curtain .content {
+
+    /* Space from left */
+    margin-left: 230px;
+
+    /* Space from right */
+    margin-right: 230px;
+
+    /* Space from top */
+    padding-top: 50px;
+
+}
+
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.games-curtain .heading {
+
+    /* White text */
+    color: white;
+
+    /* Put title and View All
+       on opposite sides */
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Size */
+    font-size: 29px;
+
+    /* Bold */
+    font-weight: bold;
+
+}
+
+
+
+/* =========================
+   GAME CARDS
+   ========================= */
+
+.games-curtain .tab {
+
+    /* Cards in one row */
+    display: flex;
+
+    /* Vertically centered */
+    align-items: center;
+
+    /* Spread cards */
+    justify-content: space-between;
+
+    /* Space between cards */
+    gap: 20px;
+
+}
+
+
+
+/* =========================
+   INDIVIDUAL CARD
+   ========================= */
+
+.games-curtain .A {
+
+    /* Card height */
+    height: 275px;
+
+    /* Card width */
+    width: 225px;
+
+    /* Rounded corners */
+    border-radius: 5px;
+
+}
+
+
+
+/* =========================
+   VIEW ALL BUTTON
+   ========================= */
+
+.view {
+
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Size */
+    font-size: 18px;
+
+    /* Bold */
+    font-weight: bold;
+
+    /* Transparent */
+    background: transparent;
+
+    /* White */
+    color: white;
+
+    /* No border */
+    border: none;
+
+    /* Hand cursor */
+    cursor: pointer;
+
+    /* Height */
+    height: 50px;
+
+    /* Align items */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+/* View All hover */
+
+.view:hover {
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
+}
+
+
+
+/* =========================
+   ARROW
+   ========================= */
+
+.arrow {
+
+    /* Width */
+    width: 20px;
+
+    /* Height */
+    height: 20px;
+
+    /* Space between text and arrow */
+    margin-left: 20px;
+
+}

@@ -1,91 +1,173 @@
 <html>
-    <head>
-        <title>GTA</title>
-     <link rel="stylesheet" href="first.css">
-     <link rel="stylesheet" href="games.css">
-    </head>
-         
-    <body>
+<head>
+    <title>GTA</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="games.css">
+</head>
 
-        <div class="head">
-        
+<body>
 
-            <div  class="rock">
-                
-                <img class="rockk" src="Photos/logo.png">
-            </div>
-   
-
-            <div  class="buttons">
-               <input type="checkbox" id="games-toggle">
-
- <label for="games-toggle">
-    <button class="B1">GAMES</button>
- </label>
-           <button class="B2">NEWSWIRE</button>
-           <button class="B3">VIDEOS</button>
-           <button class="B4">DOWNLOADS</button>
-           <a class="store" href="https://support.rockstargames.com/?_gl=1*1nc0q2u*_ga*MTQzNDEyNTk4NC4xNzg4NTI3Mjc0*_ga_PJQ2JYZDQC*czE3ODg2MTE4OTMkbzUkZzEkdDE3ODg2MTIyMDEkajU5JGwwJGgw">
-
-               <button class="B5">STORE</button>
-           </a>
-
-           <a class="support" href="https://support.rockstargames.com/">
-               <button class="B6">SUPPORT</button>
-           </a>
-            </div>
-
-            
-            <div class="C">
-                <a href="https://socialclub.rockstargames.com/rockstar-games-launcher">
-
-                    <div class="but2">
-                        <button class="launch">Get Launcher</button>
-                    </div>
-                </a>
+    <!-- Hidden checkbox used to open and close the Games curtain -->
+    <input type="checkbox" id="games-toggle">
 
 
-                <div class="C1">
-    
-                    <button class="search"><img class="sear" src="Photos/search.png" alt=""></button>
-                </div>
-                
-                <div class="C2">
-                    <button class="profile"><img class="prof" src="Photos/profile.png" alt=""></button>
-                    
-               
-                </div>
-            
-            
-            </div>
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <div class="head">
+
+        <!-- Rockstar Logo -->
+        <div class="rock">
+            <img class="rockk" src="Photos/logo.png">
         </div>
 
-        <div class="games-curtain">
 
-    <div class="content">
+        <!-- Navigation Buttons -->
+        <div class="buttons">
 
-        <div class="heading">
-            <p>Featured Games</p>
+            <!-- GAMES BUTTON -->
+            <label for="games-toggle" class="B1">
+                GAMES
+            </label>
 
-            <div class="arr">
-                <button class="view">
-                    View All
-                    <img class="arrow" src="Photos/arrow.png" alt="">
+            <button class="B2">NEWSWIRE</button>
+
+            <button class="B3">VIDEOS</button>
+
+            <button class="B4">DOWNLOADS</button>
+
+
+            <!-- STORE -->
+            <a class="store"
+               href="https://support.rockstargames.com/">
+
+                <button class="B5">STORE</button>
+
+            </a>
+
+
+            <!-- SUPPORT -->
+            <a class="support"
+               href="https://support.rockstargames.com/">
+
+                <button class="B6">SUPPORT</button>
+
+            </a>
+
+        </div>
+
+
+        <!-- Right side of header -->
+        <div class="C">
+
+            <!-- Get Launcher -->
+            <a href="https://socialclub.rockstargames.com/rockstar-games-launcher">
+
+                <div class="but2">
+
+                    <button class="launch">
+                        Get Launcher
+                    </button>
+
+                </div>
+
+            </a>
+
+
+            <!-- Search -->
+            <div class="C1">
+
+                <button class="search">
+
+                    <img class="sear"
+                         src="Photos/search.png"
+                         alt="Search">
+
                 </button>
-            </div>
-        </div>
 
-        <div class="tab">
-            <img class="A" src="Photos/GTA6.webp">
-            <img class="A" src="Photos/GTA5.webp">
-            <img class="A" src="Photos/Online.webp">
-            <img class="A" src="Photos/RDR.jpg">
-            <img class="A" src="Photos/RDR_1.jpg">
+            </div>
+
+
+            <!-- Profile -->
+            <div class="C2">
+
+                <button class="profile">
+
+                    <img class="prof"
+                         src="Photos/profile.png"
+                         alt="Profile">
+
+                </button>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
-    </body>
 
-    </html>
+
+    <!-- =========================
+         GAMES CURTAIN
+         ========================= -->
+
+    <div class="games-curtain">
+
+
+        <div class="content">
+
+
+            <!-- Heading -->
+            <div class="heading">
+
+                <p>Featured Games</p>
+
+
+                <div class="arr">
+
+                    <button class="view">
+
+                        View All
+
+                        <img class="arrow"
+                             src="Photos/arrow.png"
+                             alt="Arrow">
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Game Cards -->
+            <div class="tab">
+
+                <img class="A"
+                     src="Photos/GTA6.webp">
+
+                <img class="A"
+                     src="Photos/GTA5.webp">
+
+                <img class="A"
+                     src="Photos/Online.webp">
+
+                <img class="A"
+                     src="Photos/RDR.jpg">
+
+                <img class="A"
+                     src="Photos/RDR_1.jpg">
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
