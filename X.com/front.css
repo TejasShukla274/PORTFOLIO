@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    
+}
+.Xcom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 280px;
+
+    min-height: 100vh;
+}
+
+
+.content {
+    width: 434px;
+    color: white;
+}
+
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.X {
+    width: 500px;
+    height: auto;
+}
+.head{
+    font-size: 70;
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+}
+
+.google{
+    height: 30;
+}
+.apple{
+    height: 30;
+}
+
+.But{
+    width: 434;
+    margin-bottom: 20;
+    border-radius: 30px;
+    height: 52;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     cursor: pointer;
+    font-size: 16;
+}
+
+.But:hover{
+    background-color: rgb(232, 228, 228);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+        width: 434px;
+        margin-top: 30;
+        color: gray;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background: gray;
+    flex: 1;
+}
+
+.email{
+    background: transparent;
+    border: solid;
+    border-color: gray;
+    width: 434px;
+    height: 70px;
+    font-size: 17;
+    border-radius: 5px;
+    font-family: "TwitterChirp", Arial, sans-serif;
+    color: white;
+     margin-top: 30;
+}
+
+.go{
+    margin-top: 30;
+     background: transparent;
+    border: none;
+    background-color: rgb(42, 41, 41);
+    width: 434px;
+    height: 50px;
+    font-size: 17;
+    border-radius: 40px;
+    font-family: "TwitterChirp", Arial, sans-serif;
+    color: rgb(93, 91, 91);
+    font-weight: bold;
+}
+
+
+.footer-text {
+    margin-top: 10;
+    color: gray;
+    background-color: black;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+
+    width: 434px;
+    line-height: 15px;
+}
+
+.footer-text a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
