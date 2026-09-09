@@ -89,7 +89,9 @@ font-weight: 700;
     color: white;
      margin-top: 30;
 }
-
+.email:active{
+    border-color: rgb(59, 123, 145);
+}
 .go{
     margin-top: 30;
      background: transparent;
